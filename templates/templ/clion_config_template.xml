@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="true"
+                   ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug"
+                   name="PROBLEM_{{.ProblemID}}"
+                   REDIRECT_INPUT_PATH="$PROJECT_DIR$/problem_{{.ProblemID}}.stdin.txt"
+                   PROJECT_NAME="{{.Name}}"
+                   TARGET_NAME="problem_{{.ProblemID}}"
+                   RUN_TARGET_PROJECT_NAME="{{.Name}}"
+                   RUN_TARGET_NAME="problem_{{.ProblemID}}">
+        <method v="2">
+            <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enable="true" />
+        </method>
+    </configuration>
+</component>

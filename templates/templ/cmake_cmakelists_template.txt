@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project({{.Name}})
+set(CMAKE_CXX_STANDARD 17)
+
+{{range $i, $v := .ProbArray}}
+add_executable(problem_{{$v}} problem_{{$v}}.cpp)
+{{end}}
