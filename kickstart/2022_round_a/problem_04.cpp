@@ -20,7 +20,7 @@ struct TestCase {
 };
 
 
-int solve(TestCase& c) {
+int solve(TestCase* c) {
 
 
 
@@ -41,8 +41,8 @@ void run_all() {
   int t;
   std::cin >> t;
   for (int cid = 1; cid < t + 1; cid++) {
-          TestCase c;
-          auto result = solve(c);
-          std::cout << "Case #" << cid << ": " << result << std::endl;
+    TestCase c;
+    auto result = solve(&c);
+    std::cout << "Case #" << cid << ": " << result << std::endl;
   }
 }
