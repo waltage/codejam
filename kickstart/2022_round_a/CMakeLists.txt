@@ -11,3 +11,4 @@ add_executable(problem_03 problem_03.cpp)
 add_executable(problem_03_supp problem_03_supp.cpp)
 
 add_executable(problem_04 problem_04.cpp)
+add_executable(problem_04_supp problem_04_supp.cpp)
