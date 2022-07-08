@@ -1,3 +1,7 @@
+/*
+ * Copyright 2022 _____ 
+ */
+
 #include <iostream>
 
 
@@ -5,18 +9,18 @@
 
 
 struct TestCase {
-    int i = 0;
+  int i = 0;
 
-    TestCase() {  // NOLINT
-    // Parse Case.
+  TestCase() {  // NOLINT
+  // Parse Case.
 
-    std::cin >> i;
+  std::cin >> i;
 
-    };
+  }
 };
 
 
-int solve(TestCase& c) {
+int solve(TestCase* c) {
 
 
 
@@ -29,16 +33,16 @@ int solve(TestCase& c) {
 void run_all();
 
 int main() {
-	run_all();
-	return 0;
+  run_all();
+  return 0;
 }
 
 void run_all() {
-	int t;
-	std::cin >> t;
-	for (int cid = 1; cid < t + 1; cid++) {
-		TestCase c;
-		auto result = solve(c);
-		std::cout << "Case #" << cid << ": " << result << std::endl;
-	}
+  int t;
+  std::cin >> t;
+  for (int cid = 1; cid < t + 1; cid++) {
+    TestCase c;
+    auto result = solve(&c);
+    std::cout << "Case #" << cid << ": " << result << std::endl;
+  }
 }
