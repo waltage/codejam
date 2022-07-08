@@ -1,3 +1,7 @@
+/*
+* Copyright 2022 Daniel Walt
+*/
+
 #include <iostream>
 #include <string>
 #include <sstream>
