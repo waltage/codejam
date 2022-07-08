@@ -8,5 +8,6 @@ add_executable(problem_01 problem_01.cpp)
 add_executable(problem_02 problem_02.cpp)
 
 add_executable(problem_03 problem_03.cpp)
+add_executable(problem_03_supp problem_03_supp.cpp)
 
 add_executable(problem_04 problem_04.cpp)
