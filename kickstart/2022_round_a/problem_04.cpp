@@ -1,3 +1,7 @@
+/*
+ * Copyright 2022 Daniel Walt
+ */
+
 #include <iostream>
 
 
@@ -12,7 +16,7 @@ struct TestCase {
 
     std::cin >> i;
 
-    };
+    }
 };
 
 
@@ -29,16 +33,16 @@ int solve(TestCase& c) {
 void run_all();
 
 int main() {
-	run_all();
-	return 0;
+  run_all();
+  return 0;
 }
 
 void run_all() {
-	int t;
-	std::cin >> t;
-	for (int cid = 1; cid < t + 1; cid++) {
-		TestCase c;
-		auto result = solve(c);
-		std::cout << "Case #" << cid << ": " << result << std::endl;
-	}
+  int t;
+  std::cin >> t;
+  for (int cid = 1; cid < t + 1; cid++) {
+          TestCase c;
+          auto result = solve(c);
+          std::cout << "Case #" << cid << ": " << result << std::endl;
+  }
 }
